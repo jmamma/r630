@@ -1,0 +1,9 @@
+[Unit]
+Description=R630 fan control.
+
+[Service]
+ExecStart=/bin/bash /root/r630/r630_fan.sh
+
+[Install]
+WantedBy=multi-user.target
+
