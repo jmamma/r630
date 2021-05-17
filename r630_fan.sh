@@ -11,7 +11,7 @@ function to_int() {
   echo $1 | cut -f1 -d '.'
 }
 
-ipmitool raw 0x30 0x30 0x01 0x01
+ipmitool raw 0x30 0x30 0x01 0x00
 
 TEMP_MIN_INT=$(to_int $TEMP_MIN)
 
